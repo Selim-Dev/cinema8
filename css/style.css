@@ -10123,4 +10123,15 @@ fieldset.who-border {
 h4,h3,h2  {
   color: #D0CECE;
 }
+.gallary-box{
+  margin: 5px 0;
+}
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .gallary-box{
+      margin: 0 50px;
+    }
+}
 
