@@ -10124,3 +10124,34 @@ h4,h3,h2  {
   color: #D0CECE;
 }
 
+.map-container-6{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+.map-container-6 iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}
+
+/***** social icons*////
+ul.social-icons {
+  padding: 0;
+}
+ul  {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+ul {
+  display: inline;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
