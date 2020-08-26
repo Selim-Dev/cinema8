@@ -8812,7 +8812,7 @@ h1, h2, h3, h4, h5,
     position: relative;
     width: 100px;
     height: 100px;
-    background: #fff;
+    background: #211F1E;
     margin-bottom: 10px;
     margin-top: -80px;
     -webkit-border-radius: 50%;
@@ -8846,8 +8846,10 @@ h1, h2, h3, h4, h5,
 }      
   .services .media-body h3 {
     font-size: 20px; }
-  .services:hover {
-    background: #21cc7a; }
+  .services:hover{
+      background: #b9b9b9;
+      color: #B38D45 !important;
+     }
     .services:hover .icon {
       -webkit-box-shadow: 0px -4px 15px -12px rgba(0, 0, 0, 0.32);
       -moz-box-shadow: 0px -4px 15px -12px rgba(0, 0, 0, 0.32);
@@ -9505,7 +9507,7 @@ textarea.form-control {
       border-radius: 50%;
       background: rgba(0, 0, 0, 0.1); }
       .testimony-section .owl-dots .owl-dot.active {
-        background: #21cc7a; }
+        background: #B38D45; }
 
 .testimony-wrap {
   display: block;
@@ -10113,7 +10115,7 @@ textarea.form-control {
     stroke-dashoffset: -136px; } }
 /* **************************************************** My Css */
 fieldset.who-border {
-  border: 2px groove #dbd814;
+  border: 2px groove #B38D45;
   padding: 0 1.4em 1.4em 1.4em !important;
   margin: 0 0 1.5em 0 !important;
   -webkit-box-shadow:  0px 0px 0px 0px #000;
@@ -10123,6 +10125,42 @@ fieldset.who-border {
 h4,h3,h2  {
   color: #D0CECE;
 }
+.gallary-box{
+  margin: 15px 0;
+}
+.projects-box{
+  margin: 15px 0;
+}
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .gallary-box{
+      margin: 15px 30px;
+    }
+}
+
+.scrolled .collapse ul li .nav-link {
+  color: #B38D45 !important;
+}
+.scrolled .collapse ul li.active .nav-link {
+  color: #ffffff !important;
+}
+
+.ftco-navbar-light.scrolled {
+  background-color: #211F1E !important;
+}
+
+.services:hover{
+  background: #B38D45;
+  border-radius: 20px;
+  color: #B38D45 !important;
+ }
+
+ .section-box{
+   margin-top: 75px ;
+   margin-bottom: 75px ;
+ }
 
 .map-container-6{
   overflow:hidden;
