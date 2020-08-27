@@ -3507,7 +3507,9 @@ input[type="button"].btn-block {
   flex-grow: 1;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+}
+
 
 .navbar-toggler {
   padding: 0.25rem 0.75rem;
@@ -3696,9 +3698,12 @@ input[type="button"].btn-block {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
-    flex-direction: row; }
+    flex-direction: row;
+      }
+
     .navbar-expand .navbar-nav .dropdown-menu {
-      position: absolute; }
+      position: absolute;
+       }
     .navbar-expand .navbar-nav .nav-link {
       padding-right: 0.5rem;
       padding-left: 0.5rem; }
@@ -10159,14 +10164,14 @@ h4,h3,h2  {
   background: #B38D45;
   border-radius: 20px;
   color: #B38D45 !important;
- }
+}
 
- .section-box{
-   margin-top: 75px ;
-   margin-bottom: 75px ;
- }
+.section-box{
+  margin-top: 75px ;
+  margin-bottom: 75px ;
+}
 
- .map-container-6{
+.map-container-6{
   overflow:hidden;
   padding-bottom:56.25%;
   position:relative;
@@ -10181,7 +10186,9 @@ position:absolute;
 }
 /**************** nav bar items */
 .nav-item {
-  font-family:pasajero;
+  font-family:"BankGothic Lt BT";
+  margin-right: -20px !important;
+
 }
 /**** container control*******/
 @media (min-width: 1200px) {
