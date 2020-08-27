@@ -10162,11 +10162,7 @@ h4,h3,h2  {
    margin-bottom: 75px ;
  }
 
-<<<<<<< HEAD
-.map-container-6{
-=======
  .map-container-6{
->>>>>>> db35fa6bf3d00ef7b87e5115853ea9ebdf0f2799
   overflow:hidden;
   padding-bottom:56.25%;
   position:relative;
@@ -10179,10 +10175,6 @@ height:100%;
 width:100%;
 position:absolute;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> db35fa6bf3d00ef7b87e5115853ea9ebdf0f2799
 /***** social icons*////
 ul.social-icons {
   padding: 0;
@@ -10191,17 +10183,6 @@ ul  {
   margin-top: 0;
   margin-bottom: 10px;
 }
-<<<<<<< HEAD
-ul {
-  display: inline;
-  list-style-type: disc;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
-}
-=======
 
 .social-icons .social {
   margin: 0 10px;
@@ -10216,4 +10197,3 @@ ul {
 
 
 }
->>>>>>> db35fa6bf3d00ef7b87e5115853ea9ebdf0f2799
