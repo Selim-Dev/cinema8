@@ -10162,7 +10162,11 @@ h4,h3,h2  {
    margin-bottom: 75px ;
  }
 
+<<<<<<< HEAD
 .map-container-6{
+=======
+ .map-container-6{
+>>>>>>> db35fa6bf3d00ef7b87e5115853ea9ebdf0f2799
   overflow:hidden;
   padding-bottom:56.25%;
   position:relative;
@@ -10175,7 +10179,10 @@ height:100%;
 width:100%;
 position:absolute;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> db35fa6bf3d00ef7b87e5115853ea9ebdf0f2799
 /***** social icons*////
 ul.social-icons {
   padding: 0;
@@ -10184,6 +10191,7 @@ ul  {
   margin-top: 0;
   margin-bottom: 10px;
 }
+<<<<<<< HEAD
 ul {
   display: inline;
   list-style-type: disc;
@@ -10193,3 +10201,19 @@ ul {
   margin-inline-end: 0px;
   padding-inline-start: 40px;
 }
+=======
+
+.social-icons .social {
+  margin: 0 10px;
+}
+.social-icons .social img {
+  width: 30px;
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px) {
+
+
+}
+>>>>>>> db35fa6bf3d00ef7b87e5115853ea9ebdf0f2799
