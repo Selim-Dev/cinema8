@@ -1,15 +1,4 @@
-@font-face {
-  font-family: BankGothic Lt BT;
-  src: url(bankgothiclightbt.ttf);
-}
-@font-face {
-  font-family: Pasajero;
-  src: url(Pasajero.otf);
-}
-@font-face {
-  font-family: BankGothic ;
-  src: url(BankGothicBold.ttf);
-}
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -37,7 +26,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "BankGothic","BankGothic Lt BT",Pasajero,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-sans-serif: BankGothic,"BankGothic Lt BT",Pasajero,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
 
 *,
@@ -47,7 +36,7 @@
   box-sizing: border-box; }
 
 html {
-  font-family: Pasajero,"BankGothic Lt BT","BankGothic",sans-serif;
+  font-family: Pasajero,"BankGothic Lt BT",BankGothic,sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
@@ -10130,102 +10119,3 @@ textarea.form-control {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
 /* ***************************************************************************** My Css */
-fieldset.who-border {
-  border: 2px groove #B38D45;
-  padding: 0 1.4em 1.4em 1.4em !important;
-  margin: 0 0 1.5em 0 !important;
-  -webkit-box-shadow:  0px 0px 0px 0px #000;
-          box-shadow:  0px 0px 0px 0px #000;
-  
-}
-.paragraph{
-  font-size:20px !important;
-}
-h4,h3,h2  {
-  font-family:"BankGothic";
-  color: #D0CECE;
-}
-.gallary-box{
-  margin: 15px 0;
-}
-.projects-box{
-  margin: 15px 0;
-}
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
-    .gallary-box{
-      margin: 15px 30px;
-    }
-}
-
-.scrolled .collapse ul li .nav-link {
-  color: #B38D45 !important;
-}
-.scrolled .collapse ul li.active .nav-link {
-  color: #ffffff !important;
-}
-
-.ftco-navbar-light.scrolled {
-  background-color: #211F1E !important;
-}
-
-.services:hover{
-  background: #B38D45;
-  border-radius: 20px;
-  color: #B38D45 !important;
-}
-
-.section-box{
-  margin-top: 75px ;
-  margin-bottom: 75px ;
-}
-
-.map-container-6{
-  overflow:hidden;
-  padding-bottom:56.25%;
-  position:relative;
-  height:0;
-}
-.map-container-6 iframe{
-left:0;
-top:0;
-height:100%;
-width:100%;
-position:absolute;
-}
-/**************** nav bar items */
-.nav-item {
-  font-family:"BankGothic Lt BT";
-  margin-right: -20px !important;
-
-}
-/**** container control*******/
-@media (min-width: 1200px) {
-  .container{
-      max-width: 90%;
-  }
-}
-/***** social icons*/
-ul.social-icons {
-  padding: 0;
-}
-ul  {
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
-.social-icons .social {
-  margin: 0 10px;
-}
-.social-icons .social img {
-  width: 30px;
-}
-
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px) {
-
-
-}
