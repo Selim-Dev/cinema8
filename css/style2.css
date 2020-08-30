@@ -181,3 +181,19 @@ ul  {
   position: relative;
   padding: 0 5rem 5rem 0 !important;
 }
+
+/* font-family:"BankGothic Lt BT" */
+/* full page navigation */
+/* #fp-nav ul li .fp-tooltip,#fp-nav ul li a , #fp-nav ul li a .span {
+  color: red;
+  background: blue;
+}
+#fp-nav ul li a {
+  color: red;
+  background: blue;
+} */
+
+.fp-slidesNav ul li a span{
+  background: red !important;
+  color:red !important;
+}
