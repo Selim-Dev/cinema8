@@ -20,16 +20,28 @@
     
         <link rel="stylesheet" href="css/bootstrap-datepicker.css">
         <link rel="stylesheet" href="css/jquery.timepicker.css">
-    
-        <link rel="stylesheet" type="text/css" href="fonts/flaticon/flaticon.css">
+        <link rel="stylesheet" type="text/css" href="fonts/flaticon/font/flaticon.css">
         <!-- <link rel="stylesheet" href="css/flaticon.css"> -->
         <link rel="stylesheet" href="css/icomoon.css">
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/style2.css">
+        <link rel="stylesheet" href="css/stylenew.css">
+        <!-- Simple bar-->
+        <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css">
         <!-- light box cdn -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
         <link rel="stylesheet" href="css/fullpage.min.css">
+
         <style>
+                    .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
+    font-size: 14px;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #B38D45;
+    font-weight: 600;
+    opacity: 1 !important; }
+    
             .owl-prev{
                 left:-30px;
             }
@@ -50,27 +62,95 @@
             .owl-theme .owl-nav [class*="owl-"]:hover {
                 background-color: transparent;
             }
+            
+            .owl-carousel.home-slider .owl-dots {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 5%;
+            width: 100%;
+            text-align: center; }
+            @media (max-width: 767.98px) {
+            .owl-carousel.home-slider .owl-dots {
+                bottom: 5px; } }
+            .owl-carousel.home-slider .owl-dots .owl-dot {
+            width: 10px;
+            height: 10px;
+            margin: 5px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.4); }
+            .owl-carousel.home-slider .owl-dots .owl-dot.active {
+            background: #B38D45; }
+
+
+            .services:hover .icon {
+            -webkit-box-shadow: 0px -4px 15px -12px rgba(0, 0, 0, 0.32);
+            -moz-box-shadow: 0px -4px 15px -12px rgba(0, 0, 0, 0.32);
+            box-shadow: 0px -4px 15px -12px rgba(0, 0, 0, 0.32); }
+            .services:hover .icon span {
+                color: white; }
+            .services:hover h3 {
+            color: #fff; }
+
+
+            #projects h1{
+                font-size:22px !important;
+                margin-left:20px;
+            }
+            .projects-box{
+                margin: 5px 0;
+            }
+
+            .who-border h1{
+                font-size:24px !important;
+
+            }
+            @media only screen and (max-width: 1026px) {
+                    #My-strike {
+                        display: none !important;
+                        margin: 0 0 !important;
+                        padding: 0 0 !important;
+                        line-height:0em !important;
+                    }
+                    .nav-item{
+                        margin: 0 0 !important;
+                        padding: 0 0 !important;
+                    }
+                    #menu{
+                        color:#B38D45;
+                    }
+                    .navbar{
+                        background-color: #211F1E !important;
+                    }
+                }
+
+
+
         </style>
 </head>
 <body class="">
 <div id="fullpage">
 
-    <div class="section ">
+    <div class="section " data-anchor="homepage">
         <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
             <div class="container ">
-            
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="oi oi-menu"></span> Menu
+                <div id="menu">Menu</div>
                 </button>
-                
+
                 <div class="collapse navbar-collapse " id="ftco-nav">
                 <ul class="navbar_edit navbar-nav ml-auto">
-                    <li class="nav-item active"><a href="#" class="nav-link">HOME |</a></li>
-                    <li class="nav-item"><a href="#who-we-are" class="nav-link">WHO WE ARE |</a></li>
-                    <li class="nav-item"><a href="#our-8-philosophy" class="nav-link">OUR PHILOSOPHY |</a></li>
-                    <li class="nav-item"><a href="#our-styles" class="nav-link">OUR 8 STYLES |</a></li>
-                    <li class="nav-item"><a href="#projects" class="nav-link">PROJECTS |</a></li>
-                    <li class="nav-item"><a href="#contact-us" class="nav-link">CONTACT US</a></li>
+                    <li class="nav-item" ><a href="#homepage" class="nav-link" style="color:#B38D45;">HOME</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link" style="color:#B38D45;" id="My-strike">|</a></li>
+                    <li class="nav-item" ><a href="#whopage" class="nav-link" style="color:#B38D45;">WHO WE ARE</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link" style="color:#B38D45;"  id="My-strike">|</a></li>
+                    <li class="nav-item" ><a href="#philosophypage" class="nav-link" style="color:#B38D45;">OUR PHILOSOPHY</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link" style="color:#B38D45;"  id="My-strike">|</a></li>
+                    <li class="nav-item"><a href="#stylespage" class="nav-link" style="color:#B38D45;">OUR 8 STYLES</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link" style="color:#B38D45;"  id="My-strike">|</a></li>
+                    <li class="nav-item"><a href="#projectspage" class="nav-link" style="color:#B38D45;">PROJECTS</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link" style="color:#B38D45;"  id="My-strike">|</a></li>
+                    <li class="nav-item"><a href="#contactpage" class="nav-link" style="color:#B38D45;">CONTACT US</a></li>
                 </ul>
                 </div>
             </div>
@@ -79,10 +159,10 @@
         <div class="hero ">
         <section class="home-slider owl-carousel">
             <div class="slider-item" ><!--  style="background-image:url(images/logo-7.png);"-->
-                <img class="img-fluid slider_back_en"  src="images/logo-7.png" alt="">
+                <img class="img-fluid slider_back_en"  src="Logo-7.png" alt="">
             </div>
             <div class="slider-item" ><!--style="background-image:url(images/logo-8.png);"-->
-                <img class="img-fluid slider_back_ar" src="images/logo-8.png" alt="">
+                <img class="img-fluid slider_back_ar" src="Logo-8.png" alt="">
             </div>
         </section>
         </div>
@@ -115,11 +195,11 @@
     </div> -->
 
     <!--Who we are section-->
-    <div class="container section section-box">
-        <fieldset class="who-border">
+    <div class="container section section-box" id="who-we-are" data-anchor="whopage" >
+        <fieldset class="who-border"  >
             <legend class="who-border"><img class="img-fluid" src="images/Who.jpg" alt="WHO WE ARE"></legend>
             <section class="testimony-section">
-                    <div class="row no-gutters  justify-content-center my-5">
+                    <div class="row  justify-content-center my-5">
                         <div class="col-md-5 my-auto ">
                             <!--   <div class="testimony-img " style="background-image: url(images/about-1.jpg);"></div> -->
                             <img class="img-fluid rounded " style="width:600px;height:400px" src="images/who_image.jpg" alt="">
@@ -129,21 +209,21 @@
                                 <div class=" owl-carousel" >
                                     
                                     <div class="item" >
-                                        <div class="testimony-wrap pb-4" >
+                                        <div class="testimony-wrap pb-4 px-3" >
                                             <div class="text">
-                                                <p class="paragraph mb-4" >Become the architect of your space when you choose our solution for a complete private home cinema experience, an integration of design and tech that will lead you to the ultimate entertainment reality. CINEMA8 is your partner to deliver your desire</p>
+                                                <p class="paragraph mb-4 " >Become the architect of your space when you choose our solution for a complete private home cinema experience, an integration of design and tech that will lead you to the ultimate entertainment reality. CINEMA8 is your partner to deliver your desire</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="item">
-                                        <div class="testimony-wrap pb-4">
+                                        <div class="testimony-wrap pb-4 px-3">
                                             <div class="text">
-                                                <p class="paragraph mb-4">CINEMA8 brings the future of visual display into your home today. It’s a progressive, innovative solution that sets the bar as well as consistently raising it. Introducing the finest luxury home theatre products.</p>
+                                                <p class="paragraph mb-4 ">CINEMA8 brings the future of visual display into your home today. It’s a progressive, innovative solution that sets the bar as well as consistently raising it. Introducing the finest luxury home theatre products.</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="item">
-                                        <div class="testimony-wrap pb-4">
+                                        <div class="testimony-wrap pb-4 px-3">
                                             <div class="text">
                                                 <p class="paragraph mb-4">We have used our design flair, development skills and innovative range of technologies to break into the home theatre market, for individuals who have a need to be different and a desire for the very latest and innovative technology, image has now become a way of life.</p>
                                             </div>
@@ -162,25 +242,25 @@
 
         <!--Phitosophy part 2-->
 
-    <div class="container section section-box ">
+    <div class="container section section-box " id="our-8-philosophy" data-anchor="philosophypage">
         <fieldset class="who-border d-flex justify-content-center mb-10">
             <legend class="who-border"><img class="img-fluid" src="images/Philisophy.jpg" alt="THE 8 PHILOSOPHY"></legend>
             
             <div class="ftco-section">
                     <div class="row d-flex">
-                        <div class="col-md pr-md-1 d-flex align-self-stretch ">
-                        <div class=" media block-6 services py-4 d-block text-center">
-                            <div class="d-flex justify-content-center">
-                            <div class="icon d-flex align-items-center justify-content-center">
-                                <span class="flaticon-test"></span>
+                        <div class="col-md pr-md-1 d-flex align-self-stretch mt-3">
+                            <div class=" media block-6 services py-4 d-block text-center">
+                                <div class="d-flex justify-content-center">
+                                <div class="icon d-flex align-items-center justify-content-center">
+                                    <span class="flaticon-test"></span>
+                                </div>
+                                </div>
+                                <div class="media-body">
+                                <h4 class="heading mb-3">8 QUESTIONS FORM</h4>
+                                <p class="paragraph" align="justify">CINEMA8 developed an 8 questions form, which leads the client to choose his/her home cinema design, furniture, technology and other items with help of our team.</p>
+                                </div>
+                            </div>      
                             </div>
-                            </div>
-                            <div class="media-body">
-                            <h4 class="heading mb-3">8 QUESTIONS FORM</h4>
-                            <p class="paragraph" align="justify">CINEMA8 developed an 8 questions form, which leads the client to choose his/her home cinema design, furniture, technology and other items with help of our team.</p>
-                            </div>
-                        </div>      
-                        </div>
                         <div class="col-md px-md-1 d-flex align-self-stretch">
                         <div class="mx-3 media block-6 services active py-4 d-block text-center">
                             <div class="d-flex justify-content-center">
@@ -215,16 +295,15 @@
 
         <!-- styles part 1 ------------------- -->
 
-    <div class="container  section section-box "   id="our-styles">
-        <fieldset class="who-border justify-content-center " style="max-height: 800px;">
-            <legend class="who-border mb-0"><img class="img-fluid" src="images/Styles.jpg" alt="OUR 8 STYLES"></legend>
-                <div class="container">
-                    <div class="owl-carousel">
-                            <div class="item">
-                                <div class="row justify-content-center mb-0">  
+<div class="container  section section-box  "   id="our-styles" data-anchor="stylespage">
+    <fieldset class="who-border justify-content-center  "  >
+        <legend class="who-border mb-0"><img class="img-fluid" src="images/Styles.jpg" alt="OUR 8 STYLES"></legend>
+            <div class="container ">
+                        <!-- <div class=" justify-content-center mb-0">   -->
+                            <div class="row justify-content-center ">
                                     <!--Basic-->
                                     <!--new-->
-                                    <div class=" col-md-5 gallary-box">
+                                    <div class=" col-md-5 gallary-box ">
                                         <a href="images/basic.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
                                             <img src="images/basic.jpg" class="img-fluid">
                                         </a>
@@ -260,29 +339,36 @@
                                             <img src="images/room-1.jpg" class="img-fluid">
                                         </a>
                                     </div>
-                                </div>
                             </div>
-                            <div class="item">
-                                <div class="row justify-content-center mb-4">  
-                            
-                                    <!--curvce-->
-                                    <div class=" col-md-5 gallary-box">
-                                        <a href="images/curve.jpg" data-toggle="lightbox" data-gallery="example-gallery2" class="col-sm-4">
-                                            <img src="images/curve.jpg" class="img-fluid">
-                                        </a>
-                                            <h1 class="text-center">CURVE</h1>
-                                            <div class="d-flex justify-content-center">
-                                                <div class="icon d-flex align-items-center justify-content-center">
-                                                    <span class="flaticon-360-degrees"></span>
-                                                </div>
+            </div>
+    </fieldset>
+</div>
+<div class="container  section section-box  "   >
+    <fieldset class="who-border justify-content-center  "  >
+        <legend class="who-border mb-0"><img class="img-fluid" src="images/Styles.jpg" alt="OUR 8 STYLES"></legend>
+            <div class="container "  >
+                        <!-- <div class=" justify-content-center mb-0">   -->
+                            <div class="row justify-content-center ">
+                                <!--curvce-->
+                                <!--new-->
+                                <div class=" col-md-5 gallary-box">
+                                    <a href="images/curve.jpg" data-toggle="lightbox" data-gallery="example-gallery2" class="col-sm-4">
+                                        <img src="images/classic.jpg" class="img-fluid">
+                                    </a>
+                                        <h1 class="text-center">CURVE</h1>
+                                        <div class="d-flex justify-content-center">
+                                            <div class="icon d-flex align-items-center justify-content-center">
+                                                <span class="flaticon-360-degrees"></span>
                                             </div>
-                                        <a href="images/room-1.jpg" data-toggle="lightbox" data-gallery="example-gallery2" class="d-none col-sm-4">
-                                            <img src="images/room-1.jpg" class="img-fluid">
-                                        </a>
-                                        <a href="images/room-1.jpg" data-toggle="lightbox" data-gallery="example-gallery2" class="d-none col-sm-4">
-                                            <img src="images/room-1.jpg" class="img-fluid">
-                                        </a>
+                                        </div>
+                                    <a href="images/room-1.jpg" data-toggle="lightbox" data-gallery="example-gallery2" class="d-none col-sm-4">
+                                        <img src="images/room-1.jpg" class="img-fluid">
+                                    </a>
+                                    <a href="images/room-1.jpg" data-toggle="lightbox" data-gallery="example-gallery2" class="d-none col-sm-4">
+                                        <img src="images/room-1.jpg" class="img-fluid">
+                                    </a>
                                     </div>
+    
                                     <!--luxury-->
                                     <div class="col-md-5 gallary-box">
                                         <a href="images/luxury.jpg" data-toggle="lightbox" data-gallery="example-gallery3" class="col-sm-4">
@@ -301,253 +387,260 @@
                                             <img src="images/room-1.jpg" class="img-fluid">
                                         </a>
                                     </div>
-                                </div>
+                                
+
                             </div>
-                            <div class="item">
-                                <div class="row justify-content-center mb-4"> 
-                                    <!--the 60's-->
-                                    <div class="col-md-5 gallary-box">
-                                        <a href="images/The 60's.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                                            <img src="images/The 60's.jpg" class="img-fluid">
-                                            <img src="images/the60's.jpg" style="height:40px;width: 162px;" class="img-fluid mx-auto d-block mt-4 mb-3">
-                                            <div class="d-flex justify-content-center">
-                                                <div class="icon d-flex align-items-center justify-content-center">
-                                                    <span class="flaticon-360-degrees"></span>
-                                                </div>
-                                            </div>
+            </div>
+    </fieldset>
+</div>
+<div class="container  section section-box  "   >
+    <fieldset class="who-border justify-content-center  "  >
+        <legend class="who-border mb-0"><img class="img-fluid" src="images/Styles.jpg" alt="OUR 8 STYLES"></legend>
+            <div class="container " >
+                        <!-- <div class=" justify-content-center mb-0">   -->
+                            <div class="row justify-content-center ">
+                                <!--the 60's-->
+                                <div class="col-md-5 gallary-box">
+                                    <a href="images/The 60's.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                                        <img src="images/The 60's.jpg" class="img-fluid">
+                                        
+                                    </a>
+                                    <h1 class="text-center" style="font-family: pasajero;">THE 60'S</h1>
+                                    <div class="d-flex justify-content-center">
+                                        <div class="icon d-flex align-items-center justify-content-center">
+                                            <span class="flaticon-360-degrees"></span>
+                                        </div>
+                                    </div>
+                                    <a href="images/room-2.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="d-none col-sm-4">
+                                        <img src="images/room-2.jpg" class="img-fluid">
+                                    </a>
+                                    <a href="images/room-3.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="d-none col-sm-4">
+                                        <img src="images/room-3.jpg" class="img-fluid ">
+                                    </a>
+                                    <a href="images/room-4.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="d-none col-sm-4">
+                                        <img src="images/room-4.jpg" class="img-fluid">
+                                    </a>
+                                </div>
+                                <!--steps-->
+                                <div class=" col-md-5 gallary-box">
+                                    <a href="images/steps.jpg" data-toggle="lightbox" data-gallery="example-gallery1" class="col-sm-4">
+                                        <img src="images/steps.jpg" class="img-fluid ">
+                                    </a>
+                                    <h1 class="text-center" style="font-family: pasajero;">STEPS</h1>
+                                    <div class="d-flex justify-content-center">
+                                        <div class="icon d-flex align-items-center justify-content-center">
+                                            <span class="flaticon-360-degrees"></span>
+                                        </div>
+                                    </div>
+                                    <a href="images/room-1.jpg" data-toggle="lightbox" data-gallery="example-gallery1" class="d-none col-sm-4">
+                                        <img src="images/room-1.jpg" class="img-fluid">
+                                    </a>
+                                    <a href="images/room-1.jpg" data-toggle="lightbox" data-gallery="example-gallery1" class="d-none col-sm-4">
+                                        <img src="images/room-1.jpg" class="img-fluid">
+                                    </a>
+                                </div>
                             
-                                        </a>
-                                        <a href="images/room-2.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="d-none col-sm-4">
-                                            <img src="images/room-2.jpg" class="img-fluid">
-                                        </a>
-                                        <a href="images/room-3.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="d-none col-sm-4">
-                                            <img src="images/room-3.jpg" class="img-fluid ">
-                                        </a>
-                                        <a href="images/room-4.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="d-none col-sm-4">
-                                            <img src="images/room-4.jpg" class="img-fluid">
-                                        </a>
-                                    </div>
-                                    <!--steps-->
-                                    <div class=" col-md-5 gallary-box">
-                                        <a href="images/steps.jpg" data-toggle="lightbox" data-gallery="example-gallery1" class="col-sm-4">
-                                            <img src="images/steps.jpg" class="img-fluid ">
-                                        </a>
-                                            <h1 class="text-center" style="font-family: pasajero;">STEPS</h1>
-                                            <div class="d-flex justify-content-center">
-                                                <div class="icon d-flex align-items-center justify-content-center">
-                                                    <span class="flaticon-360-degrees"></span>
-                                                </div>
-                                            </div>
-                                        <a href="images/room-1.jpg" data-toggle="lightbox" data-gallery="example-gallery1" class="d-none col-sm-4">
-                                            <img src="images/room-1.jpg" class="img-fluid">
-                                        </a>
-                                        <a href="images/room-1.jpg" data-toggle="lightbox" data-gallery="example-gallery1" class="d-none col-sm-4">
-                                            <img src="images/room-1.jpg" class="img-fluid">
-                                        </a>
-                                    </div>
-                                </div>
-                            
+
                             </div>
-                            <div class="item">
-                                <div class="row justify-content-center mb-4">
-                                    
-                                    <!--aurora-->
-                                    <div class=" col-md-5 gallary-box">
-                                        <a href="images/Aurora.jpg" data-toggle="lightbox" data-gallery="example-gallery2" class="col-sm-4">
-                                            <img src="images/Aurora.jpg" class="img-fluid">
-                                        </a>
-                                            <h1 class="text-center">AURORA</h1>
-                                            <div class="d-flex justify-content-center">
-                                                <div class="icon d-flex align-items-center justify-content-center">
-                                                    <span class="flaticon-360-degrees"></span>
-                                                </div>
+            </div>
+    </fieldset>
+</div>
+<div class="container  section section-box  "   >
+    <fieldset class="who-border justify-content-center  "  >
+        <legend class="who-border mb-0"><img class="img-fluid" src="images/Styles.jpg" alt="OUR 8 STYLES"></legend>
+            <div class="container "  >
+                        <!-- <div class=" justify-content-center mb-0">   -->
+                            <div class="row justify-content-center ">
+
+                                <!--aurora-->
+                                <div class=" col-md-5 gallary-box">
+                                    <a href="images/Aurora.jpg" data-toggle="lightbox" data-gallery="example-gallery2" class="col-sm-4">
+                                        <img src="images/Aurora.jpg" class="img-fluid">
+                                    </a>
+                                        <h1 class="text-center">AURORA</h1>
+                                        <div class="d-flex justify-content-center">
+                                            <div class="icon d-flex align-items-center justify-content-center">
+                                                <span class="flaticon-360-degrees"></span>
                                             </div>
-                                        <a href="images/room-1.jpg" data-toggle="lightbox" data-gallery="example-gallery2" class="d-none col-sm-4">
-                                            <img src="images/room-1.jpg" class="img-fluid">
-                                        </a>
-                                        <a href="images/room-1.jpg" data-toggle="lightbox" data-gallery="example-gallery2" class="d-none col-sm-4">
-                                            <img src="images/room-1.jpg" class="img-fluid">
-                                        </a>
-                                    </div>
-                                    <!--play room-->
-                                    <div class=" col-md-5 gallary-box">
-                                        <a href="images/play room.jpg" data-toggle="lightbox" data-gallery="example-gallery3" class="col-sm-4">
-                                            <img src="images/play room.jpg" class="img-fluid">
-                                        </a>
-                                            <h1 class="text-center">PLAY ROOM</h1>
-                                            <div class="d-flex justify-content-center">
-                                                <div class="icon d-flex align-items-center justify-content-center">
-                                                    <span class="flaticon-360-degrees"></span>
-                                                </div>
+                                        </div>
+                                    <a href="images/room-1.jpg" data-toggle="lightbox" data-gallery="example-gallery2" class="d-none col-sm-4">
+                                        <img src="images/room-1.jpg" class="img-fluid">
+                                    </a>
+                                    <a href="images/room-1.jpg" data-toggle="lightbox" data-gallery="example-gallery2" class="d-none col-sm-4">
+                                        <img src="images/room-1.jpg" class="img-fluid">
+                                    </a>
+                                </div>
+                                <!--play room-->
+                                <div class=" col-md-5 gallary-box">
+                                    <a href="images/play room.jpg" data-toggle="lightbox" data-gallery="example-gallery3" class="col-sm-4">
+                                        <img src="images/play room.jpg" class="img-fluid">
+                                    </a>
+                                        <h1 class="text-center">PLAY ROOM</h1>
+                                        <div class="d-flex justify-content-center">
+                                            <div class="icon d-flex align-items-center justify-content-center">
+                                                <span class="flaticon-360-degrees"></span>
                                             </div>
-                                        <a href="images/room-1.jpg" data-toggle="lightbox" data-gallery="example-gallery3" class="d-none col-sm-4">
-                                            <img src="images/room-1.jpg" class="img-fluid">
-                                        </a>
-                                        <a href="images/room-1.jpg" data-toggle="lightbox" data-gallery="example-gallery3" class="d-none col-sm-4">
-                                            <img src="images/room-1.jpg" class="img-fluid">
-                                        </a>
-                                    </div>
+                                        </div>
+                                    <a href="images/room-1.jpg" data-toggle="lightbox" data-gallery="example-gallery3" class="d-none col-sm-4">
+                                        <img src="images/room-1.jpg" class="img-fluid">
+                                    </a>
+                                    <a href="images/room-1.jpg" data-toggle="lightbox" data-gallery="example-gallery3" class="d-none col-sm-4">
+                                        <img src="images/room-1.jpg" class="img-fluid">
+                                    </a>
                                 </div>
                             </div>
 
-
-
-                    </div>
-                </div>
-        </fieldset>
-    </div>
+            </div>
+    </fieldset>
+</div>
 
 
 
+<!-- Start Projects Section -->
 
-    <!-- Start Projects Section -->
-
-    <div class="container section  section-box" id="projects">
-        <fieldset class="who-border justify-content-center ">
-            <legend class="who-border"><img class="img-fluid" src="images/Projects.jpg" alt="Our Projects"></legend>
-                    <div class="container">
-                        <div class="row  ">
-                            <div class=" col-md-3 projects-box">
-                                <a href="images/room-5.jpg" data-toggle="lightbox" data-gallery="example-gallery3" class="col-sm-4">
-                                    <img src="images/room-5.jpg" class="img-fluid">
-                                </a>
-                                <h2 class="text-center">NAME</h2>
-                                <h2 class="text-center">SITE</h2>
-                                <a href="images/room-1.jpg" data-toggle="lightbox" data-gallery="example-gallery3" class="d-none col-sm-4">
-                                    <img src="images/room-1.jpg" class="img-fluid">
-                                </a>
-                                <a href="images/room-1.jpg" data-toggle="lightbox" data-gallery="example-gallery3" class="d-none col-sm-4">
-                                    <img src="images/room-1.jpg" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class=" col-md-3 projects-box">
-                                <a href="images/room-6.jpg" data-toggle="lightbox" data-gallery="example-gallery3" class="col-sm-4">
-                                    <img src="images/room-6.jpg" class="img-fluid">
-                                </a>
-                                <h2 class="text-center">NAME</h2>
-                                <h2 class="text-center">SITE</h2>
-                                <a href="images/room-1.jpg" data-toggle="lightbox" data-gallery="example-gallery3" class="d-none col-sm-4">
-                                    <img src="images/room-1.jpg" class="img-fluid">
-                                </a>
-                                <a href="images/room-1.jpg" data-toggle="lightbox" data-gallery="example-gallery3" class="d-none col-sm-4">
-                                    <img src="images/room-1.jpg" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class=" col-md-3 projects-box">
-                                <a href="images/room-3.jpg" data-toggle="lightbox" data-gallery="example-gallery3" class="col-sm-4">
-                                    <img src="images/room-3.jpg" class="img-fluid">
-                                </a>
-                                <h2 class="text-center">NAME</h2>
-                                <h2 class="text-center">SITE</h2>
-                                <a href="images/room-1.jpg" data-toggle="lightbox" data-gallery="example-gallery3" class="d-none col-sm-4">
-                                    <img src="images/room-1.jpg" class="img-fluid">
-                                </a>
-                                <a href="images/room-1.jpg" data-toggle="lightbox" data-gallery="example-gallery3" class="d-none col-sm-4">
-                                    <img src="images/room-1.jpg" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="col-md-3 projects-box">
-                                <a href="images/room-1.jpg" data-toggle="lightbox" data-gallery="example-gallery3" class="col-sm-4">
-                                    <img src="images/room-1.jpg" class="img-fluid">
-                                </a>
-                                <h2 class="text-center">NAME</h2>
-                                <h2 class="text-center">SITE</h2>
-                                <a href="images/room-1.jpg" data-toggle="lightbox" data-gallery="example-gallery3" class="d-none col-sm-4">
-                                    <img src="images/room-1.jpg" class="img-fluid">
-                                </a>
-                                <a href="images/room-1.jpg" data-toggle="lightbox" data-gallery="example-gallery3" class="d-none col-sm-4">
-                                    <img src="images/room-1.jpg" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class=" col-md-3 projects-box">
-                                <a href="images/room-2.jpg" data-toggle="lightbox" data-gallery="example-gallery3" class="col-sm-4">
-                                    <img src="images/room-2.jpg" class="img-fluid">
-                                </a>
-                                <h2 class="text-center">NAME</h2>
-                                <h2 class="text-center">SITE</h2>
-                                <a href="images/room-1.jpg" data-toggle="lightbox" data-gallery="example-gallery3" class="d-none col-sm-4">
-                                    <img src="images/room-1.jpg" class="img-fluid">
-                                </a>
-                                <a href="images/room-1.jpg" data-toggle="lightbox" data-gallery="example-gallery3" class="d-none col-sm-4">
-                                    <img src="images/room-1.jpg" class="img-fluid">
-                                </a>
-                            </div>
+<div class="container section  section-box" id="projects" data-anchor="projectspage">
+    <fieldset class="who-border justify-content-center ">
+        <legend class="who-border"><img class="img-fluid" src="images/Projects.jpg" alt="Our Projects"></legend>
+                <div class="container">
+                    <div class="row  " >
+                        <div class=" col-md-3 projects-box">
+                            <a href="images/room-5.jpg" data-toggle="lightbox" data-gallery="example-gallery3" class="col-sm-4">
+                                <img src="images/room-5.jpg" class="img-fluid">
+                            </a>
+                            <h1 class="text-center py-0" style="color:#B38D45; margin: 0px 0px !important;">NAME</h1>
+                            <h1 class="text-center py-0" style="color:#B38D45;  margin: 0px 0px !important;">SITE</h1>
+                            <a href="images/room-1.jpg" data-toggle="lightbox" data-gallery="example-gallery3" class="d-none col-sm-4">
+                                <img src="images/room-1.jpg" class="img-fluid">
+                            </a>
+                            <a href="images/room-1.jpg" data-toggle="lightbox" data-gallery="example-gallery3" class="d-none col-sm-4">
+                                <img src="images/room-1.jpg" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class=" col-md-3 projects-box">
+                            <a href="images/room-6.jpg" data-toggle="lightbox" data-gallery="example-gallery3" class="col-sm-4">
+                                <img src="images/room-6.jpg" class="img-fluid">
+                            </a>
+                            <h1 class="text-center" style="color:#B38D45;  margin: 0px 0px !important;">NAME</h1>
+                            <h1 class="text-center" style="color:#B38D45;  margin: 0px 0px !important;">SITE</h1>
+                            <a href="images/room-1.jpg" data-toggle="lightbox" data-gallery="example-gallery3" class="d-none col-sm-4">
+                                <img src="images/room-1.jpg" class="img-fluid">
+                            </a>
+                            <a href="images/room-1.jpg" data-toggle="lightbox" data-gallery="example-gallery3" class="d-none col-sm-4">
+                                <img src="images/room-1.jpg" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class=" col-md-3 projects-box">
+                            <a href="images/room-3.jpg" data-toggle="lightbox" data-gallery="example-gallery3" class="col-sm-4">
+                                <img src="images/room-3.jpg" class="img-fluid">
+                            </a>
+                            <h1 class="text-center" style="color:#B38D45;  margin: 0px 0px !important;">NAME</h1>
+                            <h1 class="text-center" style="color:#B38D45;  margin: 0px 0px !important;">SITE</h1>
+                            <a href="images/room-1.jpg" data-toggle="lightbox" data-gallery="example-gallery3" class="d-none col-sm-4">
+                                <img src="images/room-1.jpg" class="img-fluid">
+                            </a>
+                            <a href="images/room-1.jpg" data-toggle="lightbox" data-gallery="example-gallery3" class="d-none col-sm-4">
+                                <img src="images/room-1.jpg" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-3 projects-box">
+                            <a href="images/room-1.jpg" data-toggle="lightbox" data-gallery="example-gallery3" class="col-sm-4">
+                                <img src="images/room-1.jpg" class="img-fluid">
+                            </a>
+                            <h1 class="text-center" style="color:#B38D45;  margin: 0px 0px !important;">NAME</h1>
+                            <h1 class="text-center" style="color:#B38D45;  margin: 0px 0px !important;">SITE</h1>
+                            <a href="images/room-1.jpg" data-toggle="lightbox" data-gallery="example-gallery3" class="d-none col-sm-4">
+                                <img src="images/room-1.jpg" class="img-fluid">
+                            </a>
+                            <a href="images/room-1.jpg" data-toggle="lightbox" data-gallery="example-gallery3" class="d-none col-sm-4">
+                                <img src="images/room-1.jpg" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class=" col-md-3 projects-box">
+                            <a href="images/room-2.jpg" data-toggle="lightbox" data-gallery="example-gallery3" class="col-sm-4">
+                                <img src="images/room-2.jpg" class="img-fluid">
+                            </a>
+                            <h1 class="text-center" style="color:#B38D45;  margin: 0px 0px !important;">NAME</h1>
+                            <h1 class="text-center" style="color:#B38D45;  margin: 0px 0px !important;">SITE</h1>
+                            <a href="images/room-1.jpg" data-toggle="lightbox" data-gallery="example-gallery3" class="d-none col-sm-4">
+                                <img src="images/room-1.jpg" class="img-fluid">
+                            </a>
+                            <a href="images/room-1.jpg" data-toggle="lightbox" data-gallery="example-gallery3" class="d-none col-sm-4">
+                                <img src="images/room-1.jpg" class="img-fluid">
+                            </a>
                         </div>
                     </div>
-        </fieldset>
-    </div>
+                </div>
+    </fieldset>
+</div>
 
 
     <!-- End Projects Section -->
             
-    <!--Section: Contact v.1-->
+        <!--Section: Contact v.1-->
 
-    <div class="container section" id="contact-us">
+        <div class="container section" id="contact-us" data-anchor="contactpage">
         
-        <fieldset class="who-border justify-content-center ">
-            <legend ><img class="img-fluid" src="images/Contact.jpg" alt="CONTACT US"></legend>
-            <div class="row">
-                <!--Grid column-->
-                <div class="col-lg-5 mb-0">
-                <!--partners-->
-                <h2 class="text-center mb-0">Our Partners:</h2>
-                <div class=" row justify-content-center my-0">
-                    <img alt="" src="images/art.png" style=" height:111px; width:100px" /></div>
-                <div class="row justify-content-center">
-                    <div class=" text-center col-md-6"><h1><img alt="" src="images/sin.png" style=" height:111px; width:100px" /></h1></div>
-                    <div class=" text-center col-md-6"><h1><img alt="" src="images/mawared.png" style=" height:111px; width:100px" /></h1></div>
-                </div>
-                <!-- <h2 class="text-center mb-0">Contact information:</h2> -->
-
-                <div class="row ">
-                <!-- contact informatio-->
-                    <div class=" col-sm-8" style="font-family: 'BankGothic Lt BT';font-size: 18px;">
-                        <p> DOHA - QATAR<br>
-                            AL MASEILA -VILLA 21<br>
-                            AL BARAA BIN AAZIB ST.<br>
-                            P.O.BOX 91632<br>
+            <fieldset class="who-border justify-content-center ">
+                <legend ><img class="img-fluid" src="images/Contact.jpg" alt="CONTACT US"></legend>
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-lg-5 mb-0">
+                    <!--partners-->
+                    <h2 class="text-center mb-0" style="font-size:19px">OUR PARTNERS</h2>
+                    <div class=" row justify-content-center my-0">
+                        <img alt="" src="images/art.png" style=" height:150px; width:140px" /></div>
+                    <div class="row justify-content-center">
+                        <div class=" text-center col-md-5"><h1><img alt="" src="images/sin.png" style=" height:150px; width:140px" /></h1></div>
+                        <div class=" text-center col-md-5"><h1><img alt="" src="images/Mawared.png" style=" height:150px; width:140px" /></h1></div>
+                    </div>
+                    <!-- <h2 class="text-center mb-0">Contact information:</h2> -->
+                    <h2 class="text-center mb-0" style="font-size:19px">CONTACT INFORMATION</h2>
+                    <div class="row ">
+                    <!-- contact informatio-->
+                        <div class=" col-sm-12" style="font-family: 'BankGothic Lt BT';font-size: 17px;">
+                            <p> DOHA - QATAR AL MASEILA - VILLA 21<br>
+                                AL BARAA BIN AAZIB ST. P.O.BOX 91632<br>
+                                TeL: +974 4488 0648<br>
+                                Email: info@aaqtr.com
                             </p>
-                        <ul>
-                            <li>TeL: +974 4488 0648</li>
-                            <li>Fax: +974 4473 1148</li>
-                            <li>Email: info@aaqtr.com</li>
-                        </ul>
-                    </div>
-                    <div class=" col-sm-12 social-icons">
-                        <div class="row justify-content-center">
-                            <div class="col-xs-1 social">
-                                <a href="https://www.facebook.com/cinema8.qatar">
-                                    <img  src="images/facebook.svg" alt="facebook">
-                                </a>
-                            </div>
-                            <div class="col-xs-1 social">
-                                <a href="https://www.instagram.com/cinema8_qatar/">
-                                    <img  src="images/ista.svg" alt="instegram">
-                                </a>
+                        </div>
+                        <div class=" col-sm-11 social-icons">
+                            <div class="row justify-content-center">
+                                <div class="col-xs-1 social">
+                                    <a href="https://www.facebook.com/cinema8.qatar">
+                                        <img  src="images/facebook.svg" alt="facebook">
+                                    </a>
+                                </div>
+                                <div class="col-xs-1 social">
+                                    <a href="https://www.instagram.com/cinema8_qatar/">
+                                        <img  src="images/instagram.svg" alt="instegram">
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                </div>
-                <div class="col-lg-7">
-                    <!--Buttons-->
-                    <div class="row text-center">
-                        <div class="col-md-4">
-                        <a class="btn-floating blue accent-1"><i class="fas fa-map-marker-alt"></i></a>
-                        </div>
-                    </div>
-                    <br>
-                <!--Google map-->
-                <div id="map-container-google-11" class=" z-depth-1-half map-container-6" style="height: 400px">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3606.9403029333034!2d51.48348058503593!3d25.306209683845566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e45db7c29bbe1e1%3A0x28100d1cffd91538!2z2KPYsdiqINij2YHZitmG2YrZiA!5e0!3m2!1sar!2sqa!4v1598678457068!5m2!1sar!2sqa"
-                    frameborder="0" style="border:0" allowfullscreen></iframe>
-                </div>
-                </div>
-                <!--Grid column-->
-            </div>
-        </fieldset>
 
-    </div>
+                    </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <!--Buttons-->
+                        <div class="row text-center">
+                            <div class="col-md-4">
+                            <a class="btn-floating blue accent-1"><i class="fas fa-map-marker-alt"></i></a>
+                            </div>
+                        </div>
+                        <br>
+                    <!--Google map-->
+                    <div id="map-container-google-11" class=" z-depth-1-half map-container-6" style="height: 400px">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3606.9403029333034!2d51.48348058503593!3d25.306209683845566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e45db7c29bbe1e1%3A0x28100d1cffd91538!2z2KPYsdiqINij2YHZitmG2YrZiA!5e0!3m2!1sar!2sqa!4v1598678457068!5m2!1sar!2sqa"
+                        frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                    </div>
+                    <!--Grid column-->
+                </div>
+
+            </fieldset>
+    
+        </div>
 
         <!--Section: Contact v.1-->
 </div>
@@ -575,6 +668,8 @@
     <!--Light Box-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+    <!-- simple bar -->
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.js"></script>
     <!--full page scrolling-->
     <script>
         $(document).on('click', '[data-toggle="lightbox"]', function(event) {
@@ -600,15 +695,24 @@
             animateOut: 'fadeOut',
     
         });
+        if($(window).width() >= 1024){
         new fullpage('#fullpage', {
+
         //options here
         autoScrolling:true,
-        navigation:[true],
-        navigationTooltips:['Home','Who We Are','OUr Philosophy','Our 8 STyles','Projects','Contact Us'],
-        showActiveTooltip:true,
+        anchors:['homepage', 'whopage', 'philosophypage','stylespage','projectspage','contactpage'],
+        scrollingSpeed: 10,
+        loopBottom: true,
+	    loopTop: true,
+        dragAndMove: true,
+        // navigation:[true],
+        // navigationTooltips:['Home','Who We Are','OUr Philosophy','Our 8 STyles','Projects','Contact Us'],
+        // showActiveTooltip:true,
         //slidesNavPosition: 'bottom',
         // scrollHorizontally: true
         });
+        }
+
 
     </script>
 

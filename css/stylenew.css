@@ -37,11 +37,11 @@ fieldset.who-border {
   font-size:18px !important;
 }
 h1{
-  font-family:pasajero;
-  color: #B38D45;
+  font-family:pasajero !important;
+  color: #B38D45 !important;
 }
 h4,h3,h2  {
-  font-size: 20px;
+  font-size: 19px;
   font-family:BankGothic;
   color: #D0CECE;
 }
@@ -49,7 +49,7 @@ h4,h3,h2  {
   margin: 15px 0;
 }
 .projects-box{
-  margin: 15px 0;
+  margin: 5px 0;
 }
 @media screen 
   and (min-device-width: 1200px) 
@@ -57,6 +57,7 @@ h4,h3,h2  {
   and (-webkit-min-device-pixel-ratio: 1) { 
     .gallary-box{
       margin: 15px 42px !important;
+      
     }
 }
 
@@ -141,6 +142,9 @@ ul  {
   margin-top: 0;
   margin-bottom: 10px;
 }
+ul li {
+  color: #D0CECE;
+}
 
 .social-icons .social {
   margin: 0 10px;
@@ -182,18 +186,12 @@ ul  {
   padding: 0 5rem 5rem 0 !important;
 }
 
-/* font-family:"BankGothic Lt BT" */
-/* full page navigation */
-/* #fp-nav ul li .fp-tooltip,#fp-nav ul li a , #fp-nav ul li a .span {
-  color: red;
-  background: blue;
-}
-#fp-nav ul li a {
-  color: red;
-  background: blue;
-} */
 
-.fp-slidesNav ul li a span{
-  background: red !important;
-  color:red !important;
+
+
+
+/* scroll */
+.scrollclass {
+  height:150px;
+  overflow-y: scroll;
 }
